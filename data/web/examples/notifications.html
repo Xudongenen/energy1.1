@@ -18,6 +18,17 @@
     <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
+<script>
+    function firm() {
+        //利用对话框返回的值 （true 或者 false）
+        if (confirm("您确定要退出？")) {
+            //如果是true ，那么就把页面转向thcjp.cnblogs.com
+            location.href = "../index.html";
+        }
+        else {
+        }
+    }
+</script>
 <body class="">
     <div class="wrapper ">
         <div class="sidebar" data-color="orange">
@@ -26,65 +37,66 @@
     -->
             <div class="logo">
                 <a href="#" class="simple-text logo-mini">
-                    CT
+
                 </a>
                 <a href="#" class="simple-text logo-normal">
-                    Creative Tim
+                    能源管理平台
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li>
-                        <a href="../examples/dashboard.html">
+                    <li >
+                        <a href="../examples/dashboard1.html">
                             <i class="now-ui-icons design_app"></i>
-                            <p>Dashboard</p>
+                            <p>能耗概况</p>
                         </a>
                     </li>
                     <li>
                         <a href="../examples/icons.html">
                             <i class="now-ui-icons education_atom"></i>
-                            <p>Icons</p>
+                            <p>设备信息</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="../examples/map.html">
+                    <li >
+                        <a href="../examples/dashboard.html">
                             <i class="now-ui-icons location_map-big"></i>
-                            <p>Maps</p>
+                            <p>详细能耗</p>
                         </a>
                     </li>
                     <li class="active">
                         <a href="../examples/notifications.html">
                             <i class="now-ui-icons ui-1_bell-53"></i>
-                            <p>Notifications</p>
+                            <p>预警通知</p>
                         </a>
                     </li>
                     <li>
                         <a href="../examples/user.html">
                             <i class="now-ui-icons users_single-02"></i>
-                            <p>User Profile</p>
+                            <p>个人设置</p>
                         </a>
                     </li>
                     <li>
                         <a href="../examples/tables.html">
                             <i class="now-ui-icons design_bullet-list-67"></i>
-                            <p>Table List</p>
+                            <p>员工信息</p>
                         </a>
                     </li>
                     <li>
                         <a href="../examples/typography.html">
                             <i class="now-ui-icons text_caps-small"></i>
-                            <p>Typography</p>
+                            <p>数据分析服务</p>
                         </a>
                     </li>
                     <li class="active-pro">
-                        <a href="../examples/upgrade.html">
+                        <a href="#" onclick="firm()">
                             <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                            <p>Upgrade to PRO</p>
+                            <p>注销登录</p>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+
         <div class="main-panel">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
@@ -97,7 +109,7 @@
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="#pablo">Notifications</a>
+                        <a class="navbar-brand" href="#pablo">预警信息</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -107,7 +119,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <form>
                             <div class="input-group no-border">
-                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <input type="text" value="" class="form-control" placeholder="搜素">
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons ui-1_zoom-bold"></i>
                                 </span>
@@ -118,7 +130,7 @@
                                 <a class="nav-link" href="#pablo">
                                     <i class="now-ui-icons media-2_sound-wave"></i>
                                     <p>
-                                        <span class="d-lg-none d-md-block">Stats</span>
+                                        <span class="d-lg-none d-md-block">时间切换</span>
                                     </p>
                                 </a>
                             </li>
@@ -126,35 +138,36 @@
                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="now-ui-icons location_world"></i>
                                     <p>
-                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                        <span class="d-lg-none d-md-block">区域选择</span>
                                     </p>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">区域1</a>
+                                    <a class="dropdown-item" href="#">区域2</a>
+                                    <a class="dropdown-item" href="#">区域3</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
-                                    <i class="now-ui-icons users_single-02"></i>
-                                    <p>
-                                        <span class="d-lg-none d-md-block">Account</span>
-                                    </p>
-                                </a>
-                            </li>
+                            <!--<li class="nav-item">-->
+                            <!--<a class="nav-link" href="#pablo">-->
+                            <!--<i class="now-ui-icons users_single-02"></i>-->
+                            <!--<p>-->
+                            <!--<span class="d-lg-none d-md-block">Account</span>-->
+                            <!--</p>-->
+                            <!--</a>-->
+                            <!--</li>-->
                         </ul>
                     </div>
                 </div>
             </nav>
+
             <!-- End Navbar -->
             <div class="panel-header">
                 <div class="header text-center">
-                    <h2 class="title">Notifications</h2>
-                    <p class="category">Handcrafted by our friend
-                        <a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the
-                        <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a>
-                    </p>
+                    <h2 class="title">预警通知</h2>
+                    <!--<p class="category">Handcrafted by our friend-->
+                        <!--<a target="_blank" href="https://github.com/mouse0270">Robert McIntosh</a>. Please checkout the-->
+                        <!--<a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">full documentation.</a>-->
+                    <!--</p>-->
                 </div>
             </div>
             <div class="content">
@@ -162,31 +175,84 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Notifications Style</h4>
+                                <h4 class="card-title">未处理警报</h4>
                             </div>
                             <div class="card-body">
-                                <div class="alert alert-info">
-                                    <span>This is a plain notification</span>
-                                </div>
-                                <div class="alert alert-info">
-                                    <button type="button" aria-hidden="true" class="close">
+                                <div class="alert alert-primary" id="jing1">
+                                    <button type="button" aria-hidden="true" class="close" onclick="javascript:turnoff1('jing1')">
                                         <i class="now-ui-icons ui-1_simple-remove"></i>
                                     </button>
-                                    <span>This is a notification with close button.</span>
+                                    <span>
+                                        <b> 中等警告 - </b> 2018-12-23 15:00 区域A电能数据超预警值。</span>
                                 </div>
-                                <div class="alert alert-info alert-with-icon" data-notify="container">
-                                    <button type="button" aria-hidden="true" class="close">
+                                <script>
+                                    function turnoff1(obj){
+                                        var obt=document.getElementById("yi1");
+                                        document.getElementById(obj).style.display="none";
+                                        obt.style.display="block";
+                                    }
+                                    function turnoff2(obj){
+                                        var obt=document.getElementById("yi2");
+                                        document.getElementById(obj).style.display="none";
+                                        obt.style.display="block";
+                                    }
+                                    function turnoff3(obj){
+                                        var obt=document.getElementById("yi3");
+                                        document.getElementById(obj).style.display="none";
+                                        obt.style.display="block";
+                                    }
+                                    function turnoff4(obj){
+                                        var obt=document.getElementById("yi4");
+                                        document.getElementById(obj).style.display="none";
+                                        obt.style.display="block";
+                                    }
+                                    function turnoff5(obj){
+                                        var obt=document.getElementById("yi5");
+                                        document.getElementById(obj).style.display="none";
+                                        obt.style.display="block";
+                                    }
+                                </script>
+                                <!--<div class="alert alert-info">-->
+                                    <!--<button type="button" aria-hidden="true" class="close">-->
+                                        <!--<i class="now-ui-icons ui-1_simple-remove"></i>-->
+                                    <!--</button>-->
+                                    <!--<span>-->
+                                        <!--<b> Info - </b> This is a regular notification made with ".alert-info"</span>-->
+                                <!--</div>-->
+                                <!--<div class="alert alert-success">-->
+                                    <!--<button type="button" aria-hidden="true" class="close">-->
+                                        <!--<i class="now-ui-icons ui-1_simple-remove"></i>-->
+                                    <!--</button>-->
+                                    <!--<span>-->
+                                        <!--<b> Success - </b> This is a regular notification made with ".alert-success"</span>-->
+                                <!--</div>-->
+                                <div class="alert alert-warning" id="jing2">
+                                    <button type="button" aria-hidden="true" class="close" onclick="javascript:turnoff2('jing2')">
                                         <i class="now-ui-icons ui-1_simple-remove"></i>
                                     </button>
-                                    <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
-                                    <span data-notify="message">This is a notification with close button and icon.</span>
+                                    <span>
+                                        <b> 一般警告 - </b> 2018-12-23 15:00 区域B电能数据偏高。</span>
                                 </div>
-                                <div class="alert alert-info alert-with-icon" data-notify="container">
-                                    <button type="button" aria-hidden="true" class="close">
+                                <div class="alert alert-warning" id="jing3">
+                                    <button type="button" aria-hidden="true" class="close" onclick="javascript:turnoff3('jing3')">
                                         <i class="now-ui-icons ui-1_simple-remove"></i>
                                     </button>
-                                    <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
-                                    <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
+                                    <span>
+                                        <b> 一般警告 - </b> 2018-12-23 15:00 区域B水能数据偏高。</span>
+                                </div>
+                                <div class="alert alert-warning" id="jing4">
+                                    <button type="button" aria-hidden="true" class="close" onclick="javascript:turnoff4('jing4')">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> 一般警告 - </b> 2018-12-23 15:00 区域B气能数据偏高。</span>
+                                </div>
+                                <div class="alert alert-danger" id="jing5">
+                                    <button type="button" aria-hidden="true" class="close" onclick="javascript:turnoff5('jing5')">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> 严重警告 - </b> 2018-12-23 15:00 区域C设备停止运转。 </span>
                                 </div>
                             </div>
                         </div>
@@ -194,93 +260,97 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Notification states</h4>
+                                <h4 class="card-title">已处理警报</h4>
                             </div>
                             <div class="card-body">
-                                <div class="alert alert-primary">
-                                    <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
-                                    <span>
-                                        <b> Primary - </b> This is a regular notification made with ".alert-primary"</span>
+                                <div class="alert alert-info" id="yi1" style="display: none">
+                                    <span>2018-12-23 15:00 区域A电能数据超预警值。已处理 </span>
+                                </div>
+                                <div class="alert alert-info" id="yi2" style="display: none">
+                                    <span>2018-12-23 15:00 区域B电能数据偏高。 已处理 </span>
+                                </div>
+                                <div class="alert alert-info" id="yi3" style="display: none">
+                                    <span>2018-12-23 15:00 区域B水能数据偏高。 已处理 </span>
+                                </div>
+                                <div class="alert alert-info" id="yi4" style="display: none">
+                                    <span>2018-12-23 15:00 区域B气能数据偏高。已处理 </span>
+                                </div>
+                                <div class="alert alert-info" id="yi5" style="display: none">
+                                    <span>2018-12-23 15:00 区域C设备停止运转。 已处理 </span>
                                 </div>
                                 <div class="alert alert-info">
-                                    <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
-                                    <span>
-                                        <b> Info - </b> This is a regular notification made with ".alert-info"</span>
+                                    <span>2018-12-21 18:00 区域C设备不稳定。 已处理</span>
                                 </div>
-                                <div class="alert alert-success">
-                                    <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
-                                    <span>
-                                        <b> Success - </b> This is a regular notification made with ".alert-success"</span>
-                                </div>
-                                <div class="alert alert-warning">
-                                    <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
-                                    <span>
-                                        <b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
-                                </div>
-                                <div class="alert alert-danger">
-                                    <button type="button" aria-hidden="true" class="close">
-                                        <i class="now-ui-icons ui-1_simple-remove"></i>
-                                    </button>
-                                    <span>
-                                        <b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
-                                </div>
+                                <!--<div class="alert alert-info">-->
+                                    <!--<button type="button" aria-hidden="true" class="close">-->
+                                        <!--<i class="now-ui-icons ui-1_simple-remove"></i>-->
+                                    <!--</button>-->
+                                    <!--<span>This is a notification with close button.</span>-->
+                                <!--</div>-->
+                                <!--<div class="alert alert-info alert-with-icon" data-notify="container">-->
+                                    <!--<button type="button" aria-hidden="true" class="close">-->
+                                        <!--<i class="now-ui-icons ui-1_simple-remove"></i>-->
+                                    <!--</button>-->
+                                    <!--<span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>-->
+                                    <!--<span data-notify="message">This is a notification with close button and icon.</span>-->
+                                <!--</div>-->
+                                <!--<div class="alert alert-info alert-with-icon" data-notify="container">-->
+                                    <!--<button type="button" aria-hidden="true" class="close">-->
+                                        <!--<i class="now-ui-icons ui-1_simple-remove"></i>-->
+                                    <!--</button>-->
+                                    <!--<span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>-->
+                                    <!--<span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>-->
+                                <!--</div>-->
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="places-buttons">
-                                    <div class="row">
-                                        <div class="col-md-6 ml-auto mr-auto text-center">
-                                            <h4 class="card-title">
-                                                Notifications Places
-                                                <p class="category">Click to view notifications</p>
-                                            </h4>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-8 ml-auto mr-auto">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','left')">Top Left</button>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','center')">Top Center</button>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','right')">Top Right</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-8 ml-auto mr-auto">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!--<div class="col-md-12">-->
+                        <!--<div class="card">-->
+                            <!--<div class="card-body">-->
+                                <!--<div class="places-buttons">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-md-6 ml-auto mr-auto text-center">-->
+                                            <!--<h4 class="card-title">-->
+                                                <!--Notifications Places-->
+                                                <!--<p class="category">Click to view notifications</p>-->
+                                            <!--</h4>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-8 ml-auto mr-auto">-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('top','left')">Top Left</button>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('top','center')">Top Center</button>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('top','right')">Top Right</button>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-8 ml-auto mr-auto">-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-md-4">-->
+                                                    <!--<button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
             <footer class="footer">
@@ -289,17 +359,17 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    Creative Tim
+                                    <!--Creative Tim-->
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    About Us
+                                    <!--About Us-->
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Blog
+                                    <!--Blog-->
                                 </a>
                             </li>
                         </ul>
@@ -310,7 +380,7 @@
                             document.write(new Date().getFullYear())
                         </script>, Designed by
    Invision. Coded by
-  Creative Tim.More Templates  - Collect from 
+  xudong
                     </div>
                 </div>
             </footer>

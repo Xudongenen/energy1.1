@@ -4,55 +4,6 @@
 <meta charset="utf-8">
 <title>登录</title>
 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script>
-    var mail1;
-    var pass1;
-    function get() {
-        mail1=document.getElementById('mail').value;
-        pass1=document.getElementById('pass').value;
-        console.log(mail1);
-        var json={
-            "email":mail1,
-            "password":pass1
-        }
-        $.ajax({
-            type: "post",
-            url: 'user_login_check.php',
-            async: false, // 使用同步方式
-            data: json,
-            dataType:"text",
-            success: function(data) {
-                if (data == "登入成功") {
-                     window.location.href='examples/dashboard1.html';
-                }else {
-                    alert(data);
-                }
-            } // 注意不要在此行增加逗号
-        });
-    }
-    function find() {
-        var findname=document.getElementById('findname').value;
-        var yanzheng=document.getElementById('yanzheng').value;
-        if (yanzheng.length!=4||findname!="1535941400@qq.com") {
-            alert("验证码错误或账户不存在！");
-        }else {
-            findout();
-        }
-    }
-    function send() {
-        var phone1=document.getElementById('phone1').value;
-
-        if (phone1.length!=11){
-            console.log(phone1);
-            alert("请填写正确的手机号!");
-        }else {
-            alert("验证码已发送!");
-        }
-    }
-    function findout() {
-        alert("您的密码已重置为手机号，请您继续登录！")
-    }
-</script>
 <style>
 .body{
             background:#408AB4;
@@ -182,69 +133,59 @@
 		}</style>
 </head>
 <body>
-
 <script src="http://www.jq22.com/jquery/jquery-ui-1.11.0.js"></script>
 <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
 <div class="body">
   <div class="veen">
     <div class="login-btn splits">
-      <p>立即查看能耗情况?</p>
-      <button>登录</button>
+      <p>Already an user?</p>
+      <button>Login</button>
     </div>
     <div class="rgstr-btn splits">
-      <p>忘记密码?</p>
-      <button>找回密码</button>
+      <p>Don't have an account?</p>
+      <button>Register</button>
     </div>
     <div class="wrapper">
-      <!--<form action="user_login_check.php" method="post" id="form_login" onsubmit="send_form('form_login');return false;">-->
       <div id="login">
-        <h3>登录</h3>
+        <h3>Login</h3>
         <div class="mail">
-          <input type="mail" name="mail" id="mail" >
-          <label>邮箱或用户名</label>
+          <input type="mail" name="">
+          <label>Mail or Username</label>
         </div>
         <div class="passwd">
-          <input type="password" name="" id="pass">
-          <label>密码</label>
+          <input type="password" name="">
+          <label>Password</label>
         </div>
         <div class="submit">
-          <button onclick="get()" class="dark">企业管理员入口</button>
-        </div>
-        <div class="submit">
-          <button  class="dark" onclick="{location.href='https://www.joincloud.link/login '}">系统管理员入口</button>
-
+          <button onclick="{location.href='dashboard.html' }" class="dark">Login</button>
         </div>
       </div>
-      <!--</form>-->
       <div id="register">
-        <h3>找回密码</h3>
+        <h3>Register</h3>
         <div class="name">
           <input type="text" name="">
-          <label>姓名</label>
+          <label>Full Name</label>
         </div>
         <div class="mail">
-          <input type="mail" name="" id="findname">
-          <label>账号</label>
+          <input type="mail" name="">
+          <label>Mail</label>
         </div>
-          <div class="uid">
-            <input type="text" name="" id="phone1">
-            <label>手机号</label>
-          </div>
-          <div class="uid">
-            <button style="color: #6c757d" onclick="send()">获取验证码</button>
-          </div>
+        <div class="uid">
+          <input type="text" name="">
+          <label>User Name</label>
+        </div>
         <div class="passwd">
-          <input type="password" name="" id="yanzheng">
-          <label>验证码</label>
+          <input type="password" name="">
+          <label>Password</label>
         </div>
         <div class="submit">
-          <button class="dark" onclick="find()">找回密码</button>
+          <button class="dark">Register</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script src="assets/js/core/bootstrap.min.js"></script>
+
 <script>
 $(document).ready(function(){
 			$(".veen .rgstr-btn button").click(function(){
@@ -255,9 +196,7 @@ $(document).ready(function(){
 				$('.veen .wrapper').removeClass('move');
 				$('.body').css('background','#408AB4');
 			});
-		});
-
-</script>
+		});</script>
 
 </body>
 </html>

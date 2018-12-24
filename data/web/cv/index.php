@@ -5,7 +5,8 @@ $is_login = intval( $_SESSION['uid'] ) < 1 ? false:true;
 
 try
 {
-    $dbh = new PDO('mysql:host=mysql.ftqq.com;dbname=fangtangdb', 'php', 'fangtang');
+//    $dbh = new PDO('mysql:host=mysql.ftqq.com;dbname=fangtangdb', 'php', 'fangtang');
+    $dbh = new PDO('mysql:localhost:3306;dbname=mydb', 'root', '753869421');
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql = "SELECT `id`,`uid`,`title`,`created_at` FROM `resume` WHERE  `is_deleted` != 1";
