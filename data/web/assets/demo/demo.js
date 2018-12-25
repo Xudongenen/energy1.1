@@ -79,7 +79,7 @@ demo = {
           type: 'line',
           responsive: true,
           data: {
-              labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+              labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
               datasets: [{
                   label: "Active Users",
                   borderColor: "#f96332",
@@ -207,7 +207,7 @@ demo = {
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+              labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
               datasets: [{
                   label: "Data",
                   borderColor: chartColor,
@@ -301,7 +301,7 @@ demo = {
           type: 'line',
           responsive: true,
           data: {
-              labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+              labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
               datasets: [{
                   label: "Active Users",
                   borderColor: "#f96332",
@@ -363,7 +363,7 @@ demo = {
       var a =  {
         type : "bar",
         data : {
-          labels : ["January","February","March","April","May","June","July","August","September","October","November","December"],
+          labels : ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
           datasets: [{
             label: "Active Countries",
             backgroundColor: gradientFill,
